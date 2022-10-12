@@ -1,0 +1,62 @@
+{
+  "name": "@wireui/alpinejs-tooltip",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Alpine.js tooltip",
+  "main": "dist/index.js",
+  "keywords": [
+    "wireui",
+    "tooltip magic",
+    "tooltip directive",
+    "js tooltip function",
+    "ts tooltip function",
+    "alpinejs tooltip magic",
+    "alpinejs tooltip directive",
+    "alpine tooltip"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:wireui/alpinejs-tooltip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wireui/alpinejs-tooltip/issues"
+  },
+  "homepage": "https://github.com/wireui/alpinejs-tooltip",
+  "author": "João Pedro Lopes <joaopalopes24@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint tests src --ext .ts",
+    "test": "jest",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "prepare": "yarn build",
+  "prepublishOnly": "yarn lint && yarn test",
+  "preversion": "yarn lint && yarn test",
+  "dependencies": {
+    "alpinejs": "^3.10.4"
+  },
+  "devDependencies": {
+    "@types/alpinejs": "^3.7.0",
+    "@types/jest": "^29.1.2",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "commitizen": "^4.2.5",
+    "eslint": "^8.25.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^29.1.2",
+    "jest-environment-jsdom": "^29.1.2",
+    "jest-extended": "^3.1.0",
+    "ts-jest": "^29.0.3",
+    "ts-loader": "^9.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
