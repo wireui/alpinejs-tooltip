@@ -19,14 +19,8 @@ npm i @wireui/alpinejs-tooltip --save
 import Alpine from 'alpinejs'
 
 + import Tooltip from '@wireui/alpinejs-tooltip'
-+ Tooltip.register(Alpine)
 
-// or
-
-+ import { magic } from '@wireui/alpinejs-tooltip'
-+ import { directive } from '@wireui/alpinejs-tooltip'
-+ Alpine.magic('tooltip', magic)
-+ Alpine.directive('tooltip', directive)
++ Alpine.plugin(Tooltip);
 
 window.Alpine = Alpine
 

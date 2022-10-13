@@ -7,21 +7,21 @@
 module.exports = {
   clearMocks: true,
   collectCoverage: true,
-  collectCoverageFrom: ["<rootDir>/src/**/*.ts"],
-  coverageDirectory: "coverage",
+  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+  coverageDirectory: 'coverage',
   coveragePathIgnorePatterns: [
-    "/node_modules/",
-    "global.d.ts",
-    "src/alpine.ts",
+    '/node_modules/',
+    'global.d.ts',
+    'src/alpine.ts'
   ],
-  coverageProvider: "v8",
+  coverageProvider: 'v8',
   moduleNameMapper: {
-    "@/(.*)$": "<rootDir>/src/$1",
-    "@tests/(.*)$": "<rootDir>/tests/$1",
+    '@/(.*)$': '<rootDir>/src/$1',
+    '@tests/(.*)$': '<rootDir>/tests/$1'
   },
-  preset: "ts-jest",
-  roots: ["<rootDir>", "tests", "src"],
-  setupFilesAfterEnv: ["jest-extended/all"],
-  testEnvironment: "jsdom",
-  testMatch: ["<rootDir>/tests/**/*.spec.ts"],
-};
+  preset: 'ts-jest',
+  roots: ['<rootDir>', 'tests', 'src'],
+  setupFilesAfterEnv: ['jest-extended/all'],
+  testEnvironment: 'jsdom',
+  testMatch: ['<rootDir>/tests/**/*.spec.ts']
+}
